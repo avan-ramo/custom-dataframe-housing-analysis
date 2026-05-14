@@ -1,0 +1,76 @@
+# ============================================================================
+# TAB 5: ABOUT
+# ============================================================================
+with tab5:
+    st.header("About This Project")
+    
+    st.markdown("""
+    ### Project Overview
+    This application demonstrates a custom data processing library built from scratch in Python,
+    recreating core functionality of popular libraries like Pandas.
+    
+    ### Implemented Features
+    
+    #### 1. CSV Parser
+    - Custom CSV file reader with type conversion
+    - Handles 20,000+ rows efficiently
+    - Automatic type detection (int, float, bool, None, string)
+    
+    #### 2. DataFrame Class
+    - Column-oriented storage (dictionary of lists)
+    - Efficient column access and projection
+    - Validation and error handling
+    
+    #### 3. SQL-Like Operations
+    - **Filter**: Lambda-based row filtering with complex conditions
+    - **Projection**: Select specific columns to view
+    - **GroupBy**: Group data by column values with pre-filtering
+    - **Aggregation**: mean, sum, min, max, count functions
+    - **Join**: Inner join between two DataFrames with hash optimization
+      - **Enhanced join** with `left_on`/`right_on` for different column names
+    
+    ### Datasets
+    **Three Orange County Housing & Economic Datasets:**
+    
+    1. **Zillow Housing Data** (Primary)
+       - 20,777 rows × 33 columns
+       - Time series: 2014-2023
+       - Median home values by zipcode
+    
+    2. **FHFA House Price Index (HPI)**
+       - House price appreciation index
+       - Tracks relative price changes (baseline = 100)
+       - Used for join demonstrations
+    
+    3. **Medium Income Data**
+       - Household income by zipcode and year
+       - Used for demographic analysis and joins
+    
+    ### Technical Implementation
+    - Pure Python implementation (no Pandas/NumPy)
+    - Column-oriented storage for efficient operations
+    - Hash-based join for O(n+m) complexity instead of O(n²)
+    - Smart column filtering (excludes identifiers from aggregation)
+    - Streamlit for interactive web interface
+    
+    ### Key Innovations
+    1. **Hash-Based Join Optimization**
+       - O(n+m) complexity vs naive O(n*m)
+       - Supports different column names with `left_on`/`right_on`
+    
+    2. **Interactive Code Display**
+       - Shows actual code being executed
+       - Expandable "Under the Hood" sections
+       - Educational for understanding implementations
+    
+    3. **Smart Data Analysis**
+       - Filter-then-aggregate workflow
+       - Automatic exclusion of identifiers (zipcodes, IDs) from aggregation
+       - Multi-dataset exploration with consistent interface
+    
+    ### Author
+    Omar Nava - DSCI 551 Project
+    """)
+    
+    st.markdown("---")
+    st.markdown("**Technologies Used:** Python, Streamlit, Custom DataFrame Library")

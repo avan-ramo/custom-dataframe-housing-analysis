@@ -1,5 +1,13 @@
 # Custom DataFrame Housing Analysis
 
+## Live Demo
+
+https://oc-housing-analysis.streamlit.app
+
+---
+
+# Custom DataFrame Housing Analysis
+
 ## Overview
 
 This project is a custom-built data processing and housing analysis application developed in Python using Streamlit. The primary goal of the project was to recreate core functionality commonly found in libraries such as Pandas while applying the implementation to real-world Orange County housing and economic datasets.
@@ -30,6 +38,7 @@ Implemented a custom DataFrame class with:
 - Validation and error handling
 
 ### SQL-Like Data Operations
+
 The custom library supports:
 
 #### Filtering
@@ -115,8 +124,6 @@ custom-dataframe-housing-analysis/
 ├── csv_parser.py
 ├── About.txt
 ├── README.md
-├── Coordinates.csv
-├── Distance_to_Attractions.csv
 ├── FHFA_HPI_by_Zip.csv
 ├── Medium_Income.csv
 ├── OC_Transposed_Zillow.csv
@@ -161,6 +168,7 @@ http://localhost:8501
 ---
 
 ## Key Learning Outcomes
+
 This project strengthened understanding of:
 - DataFrame internals
 - efficient data storage strategies
@@ -173,17 +181,19 @@ This project strengthened understanding of:
 ---
 
 ## Future Improvements
+
 Potential future improvements include:
 - additional join types (left/right/full outer joins)
 - sorting operations
 - indexing optimization
-- larger-scale dataset support
 - visualization enhancements
 - SQL query interface integration
+- larger-scale dataset support
 
 ---
 
 ## Author
+
 Omar Nava  
 Master’s Student in Applied Data Science  
 University of Southern California
